@@ -1,0 +1,15 @@
+package main
+import "std:io"
+
+main :: || {
+  io.println("hello world")
+}
+
+Message :: struct {
+  header : string
+  message : string
+
+  test :: |self| {
+    io.println(self.message)
+  }
+}
